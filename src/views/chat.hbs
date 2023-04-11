@@ -1,0 +1,16 @@
+<a href="/">Ir al home</a>
+<a href="/realTimeProducts">Ir a productos en tiempo real</a>
+
+<h1>Chat</h1>
+<section class="chatContainer">
+  <div >
+    <form id="addMessageForm">
+      <input type="email" id="user" placeholder="Ingrese su email" />
+      <input type="text" id="message" placeholder="Ingrese su mensaje" />
+      <input class="button" type="button" value="Enviar" onclick="addMessage()"></input>
+    </form></div>
+  <div id="messages" class="allMessages"></div>
+</section>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/chat.js"></script>
